@@ -5,6 +5,9 @@
 env_rails_version = ENV["RAILS_VERSION"] || "default"
 
 case env_rails_version
+when "edge"
+  # put here your personal, local edge rails commit version
+  {path: "/home/lsoave/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/bundler/gems/rails-7eae0bb88e52"}
 when "master"
   {github: "rails/rails"}
 when "default"
